@@ -29,10 +29,10 @@ const products = [
   { name: 'Shipping', desc: '', price: 'Free' },
 ];
 
-const addresses = ['1 MUI Drive', 'Reactville', 'Anytown', '99999', 'USA'];
+const addresses = ['x xxx xxxxx', 'xxxxxxxxxx', 'xxxxx', 'xxxxx', 'xxx'];
 const payments = [
   { name: 'Card type', detail: 'Visa' },
-  { name: 'Card holder', detail: 'Mr John Smith' },
+  { name: 'Card holder', detail: 'Mr/Mrs xxx Johnson' },
   { name: 'Card number', detail: 'xxxx-xxxx-xxxx-1234' },
   { name: 'Expiry date', detail: '04/2024' },
 ];
@@ -43,15 +43,17 @@ export default function Review() {
       <Typography variant="h6" gutterBottom>
         Order summary
       </Typography>
+
       <List disablePadding>
         {products.map((product) => (
-          <ListItem key={product.name} sx={{ py: 1, px: 0 }}>
-            <ListItemText primary={product.name} secondary={product.desc} />
+          <ListItem key={product.name} sx={{ py: 0, px: 0 }}>
+            <ListItemText primary={product.name}  secondary={product.desc} /><img src="https://www.vineyardvines.com/dw/image/v2/AAHW_PRD/on/demandware.static/-/Sites-vineyardvines-master/default/dw13541b3d/images/2022/1V016616_039_LD_0331_B.jpg?sw=1184&sh=1410&sm=cut&strip=false" alt="VVL"width="130px"height="75px"></img>
             <Typography variant="body2">{product.price}</Typography>
+
           </ListItem>
         ))}
 
-        <ListItem sx={{ py: 1, px: 0 }}>
+        <ListItem sx={{ py: 0, px: 0 }}>
           <ListItemText primary="Total" />
           <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
             $76.06
@@ -63,7 +65,7 @@ export default function Review() {
           <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
             Shipping
           </Typography>
-          <Typography gutterBottom>John Smith</Typography>
+          <Typography gutterBottom>xxxx xxxxx</Typography>
           <Typography gutterBottom>{addresses.join(', ')}</Typography>
         </Grid>
         <Grid item container direction="column" xs={12} sm={6}>

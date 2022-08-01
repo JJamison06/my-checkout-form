@@ -16,12 +16,13 @@ import AddressForm from './AddressForm';
 import PaymentForm from './PaymentForm';
 import Review from './Review';
 
+
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
-        Your Website
+        Vineyard Vines
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -70,15 +71,15 @@ export default function Checkout() {
         }}
       >
  
-       <img src="https://mma.prnewswire.com/media/1028699/vineyard_vines_Logo.jpg?p=facebook" alt="Vineyard Vine logo"></img>
 
 
 
 
         <Toolbar>
-          <Typography variant="h6" color="inherit" noWrap>
-            Vineyard Vines
-          </Typography>
+        
+        <img src="https://mma.prnewswire.com/media/1028699/vineyard_vines_Logo.jpg?p=facebook" alt="Vineyard Vine logo" width="130px"height="75px"></img>
+        <Typography variant="h6" color="inherit" noWrap>
+        </Typography>
         </Toolbar>
       </AppBar>
       <Container component="main" maxWidth="sm" sx={{ mb: 4 }}>
@@ -124,7 +125,7 @@ export default function Checkout() {
                   </Button>
                 </Box>
               </React.Fragment>
-            )}
+            )}        
           </React.Fragment>
         </Paper>
         <Copyright />
